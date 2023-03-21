@@ -1,38 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NumberGame React Component
 
-## Getting Started
+This project involves creating a React component called `NumberGame` that allows users to guess a random integer between 1 and 100, inclusive.
 
-First, run the development server:
+## Requirements
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- Display a random integer between 1 and 100.
+- Provide an input field for users to enter their guess.
+- Include a submit button to submit the user's guess.
+- If the guess is correct, display the message "You win!".
+- If the guess is incorrect, display the message "Try again!" along with information about whether the guess was too high or too low.
+- Allow users to keep guessing until they find the correct answer.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Instructions
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Initialize a new React project** using a suitable boilerplate or by running `npx create-react-app number-game`.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+2. **Create a functional component** called `NumberGame` with the necessary structure and initial state for the random number, user's guess, and displayed message.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+3. **Generate a random number** between 1 and 100 using a helper function and set the initial state of the random number.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. **Implement the input field** for the user's guess:
 
-## Learn More
+   - Create a controlled input field.
+   - Bind the input field's value to the user's guess state.
+   - Add an event handler to update the user's guess state when the input field value changes.
 
-To learn more about Next.js, take a look at the following resources:
+5. **Implement the submit button**:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   - Add a button element with an onClick event handler.
+   - Write a function to handle the button click event.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+6. **Check the user's guess upon clicking the submit button**:
 
-## Deploy on Vercel
+   - Compare the user's guess with the random number.
+   - Update the displayed message state based on the comparison.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+7. **Display the corresponding message based on the user's guess**:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   - Conditionally render the "You win!" message if the user's guess is correct.
+   - If the guess is incorrect, render the "Try again!" message along with information about the guess being too high or too low.
+
+8. **Allow continuous guessing** until the user finds the correct answer.
+
+9. **Organize and optimize the code** by dividing it into separate functions or custom hooks and using descriptive names for variables and functions.
+
+10. **Style the component** using CSS or a CSS framework like Tailwind CSS to make the component visually appealing and responsive.
+
+11. **Test the component** for various use cases and edge cases to ensure it works as expected and is responsive on different screen sizes.
