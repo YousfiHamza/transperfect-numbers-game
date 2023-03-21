@@ -2,6 +2,8 @@
 
 This project involves creating a React component called `NumberGame` that allows users to guess a random integer between 1 and 100, inclusive.
 
+Live Demo : [https://transperfect-numbers-game.com/](https://transperfect-numbers-game.vercel.app/)
+
 ## Requirements
 
 - Display a random integer between 1 and 100.
